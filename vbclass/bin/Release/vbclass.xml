@@ -1,0 +1,142 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+vbclass
+</name>
+</assembly>
+<members>
+<member name="T:vbclass.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:vbclass.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:vbclass.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:vbclass.Rotor.装配约束(pfcls.IpfcComponentFeat,System.Double[],System.Double[],System.Double,System.Double,System.Double,System.Double,System.String,System.String,System.Double,System.Double)">
+ <summary>
+ 
+ </summary>
+ <param name="asmcomp_2"></param>插入的元件特征
+ <param name="a"></param>固定元件的特征ID
+ <param name="s"></param>插入元件的特征ID
+ <param name="idc#"></param>固定元件特征ID
+ <param name="idb#"></param>插入元件特征ID
+ <param name="type_1#"></param>固定元件的配合方法
+ <param name="type_2#"></param>固定元件的配合方法
+ <param name="Name_1$"></param>固定元件的基准面轴的名称
+ <param name="Name_2$"></param>固定元件的基准面轴的名称
+ <param name="ida#"></param>配合类型
+ <param name="distance#"></param>配合距离
+ <returns></returns>
+</member>
+<member name="M:vbclass.Rotor.轴约束(pfcls.IpfcComponentFeat,System.Double[],System.Double[],System.String,System.String)">
+ <summary>
+ 装配轴轴对齐
+ </summary>
+ <param name="asmcomp_2"></param>需要添加约束的组件
+ <param name="s"></param>需要配合约束的组件实体
+ <param name="a"></param>需要添加约束的组件实体
+ <param name="axisName_1$"></param>配合约束的组件轴名称
+ <param name="axisName_2$"></param>添加约束的组件轴名称
+ <returns></returns>
+</member>
+<member name="M:vbclass.Rotor.addParam(pfcls.IpfcModel,System.String,System.String,System.String)">
+ <summary>
+ 添加参数
+ </summary>
+ <param name="model">模块</param>
+ <param name="paramName$">参数名</param>
+ <param name="paramValue$">参数值</param>
+ <param name="paramType$">参数类型</param>
+</member>
+<member name="M:vbclass.Rotor.setParamValue(pfcls.IpfcModel,System.String,System.String,System.String,System.Double)">
+ <summary>
+ 修改参数
+ </summary>
+ <param name="model"></param>
+ <param name="paramName$"></param>
+ <param name="paramValue$"></param>
+ <param name="paramType$"></param>
+</member>
+<member name="M:vbclass.Stator.addParam(pfcls.IpfcModel,System.String,System.String,System.String)">
+ <summary>
+ 添加参数
+ </summary>
+ <param name="model">模块</param>
+ <param name="paramName$">参数名</param>
+ <param name="paramValue$">参数值</param>
+ <param name="paramType$">参数类型</param>
+</member>
+<member name="M:vbclass.Stator.插入符号(pfcls.IpfcDrawing,System.String,System.String,System.String,System.String,System.Double,System.Double,System.Double)">
+ <summary>
+ 插入需要的符号 像粗糙度、形位公差、某些尺寸修饰、基准等等
+ </summary>
+ <param name="drawing"></param>视图
+ <param name="path$"></param>符号路径（不包含符号文件名称）
+ <param name="name$"></param>文件内部符号名称
+ <param name="text$"></param>符号名称下的 值
+ <param name="symbolname$"></param>符号文件名称
+ <param name="x#"></param>插入符号的X位置
+ <param name="y#"></param>插入符号的Y位置
+ <param name="ScaledHeight#"></param>插入符号的尺寸大小
+</member>
+<member name="M:vbclass.Stator.装配约束(pfcls.IpfcComponentFeat,System.Double[],System.Double[],System.Double,System.Double,System.Double,System.Double,System.String,System.String,System.Double,System.Double)">
+ <summary>
+ 
+ </summary>
+ <param name="asmcomp_2"></param>插入的元件特征
+ <param name="a"></param>固定元件的特征ID
+ <param name="s"></param>插入元件的特征ID
+ <param name="idc#"></param>固定元件特征ID
+ <param name="idb#"></param>插入元件特征ID
+ <param name="type_1#"></param>固定元件的特征项目类型
+ <param name="type_2#"></param>插入元件的特征项目类型
+ <param name="Name_1$"></param>固定元件的基准面轴的名称
+ <param name="Name_2$"></param>插入元件的基准面轴的名称
+ <param name="ida#"></param>配合类型
+ <param name="distance#"></param>配合距离
+ <returns></returns>
+</member>
+<member name="M:vbclass.Stator.threeID(pfcls.IpfcComponentFeat,System.Double[],System.Double[],System.Double[],System.Double[],System.Double[],System.Double)">
+ <summary>
+ 基准面重合
+ </summary>
+ <param name="asmcomp_2"></param>需要添加约束的组件
+ <param name="componentModel_1"></param>需要配合约束的组件实体
+ <param name="componentModel_2"></param>需要添加约束的组件实体
+ <param name="DatumName_1$"></param>配合约束的组件基准面名称
+ <param name="DatumName_2$"></param>添加约束的组件基准面名称
+ <returns></returns>
+</member>
+<member name="M:vbclass.Stator.轴约束(pfcls.IpfcComponentFeat,System.Double[],System.Double[],System.String,System.String)">
+ <summary>
+ 装配轴轴对齐
+ </summary>
+ <param name="asmcomp_2"></param>需要添加约束的组件
+ <param name="s"></param>需要配合约束的组件实体
+ <param name="a"></param>需要添加约束的组件实体
+ <param name="axisName_1$"></param>配合约束的组件轴名称
+ <param name="axisName_2$"></param>添加约束的组件轴名称
+ <returns></returns>
+</member>
+<member name="M:vbclass.Stator.setParamValue(pfcls.IpfcModel,System.String,System.String,System.String,System.Double)">
+ <summary>
+ 修改参数
+ </summary>
+ <param name="model"></param>
+ <param name="paramName$"></param>
+ <param name="paramValue$"></param>
+ <param name="paramType$"></param>
+</member>
+</members>
+</doc>
